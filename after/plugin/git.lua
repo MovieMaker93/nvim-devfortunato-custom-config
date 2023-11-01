@@ -1,3 +1,3 @@
-local git = require("vim-fugitive")
-
-vim.set
+vim.keymap.set("n", "<leader>gc", "<cmd>Git commit<cr>",
+  {silent = true, noremap = true}
+)
