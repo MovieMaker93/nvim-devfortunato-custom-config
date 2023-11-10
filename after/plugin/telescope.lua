@@ -5,6 +5,10 @@ vim.keymap.set('n', '<leader>ps', function()
 	builtin.grep_string({ search = vim.fn.input("Grep > ") });
 end)
 vim.keymap.set('n', '<leader>pb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
+vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
+vim.keymap.set('n', '<leader>fb', builtin.current_buffer_fuzzy_find, {})
+vim.keymap.set('n', '<leader>qx', builtin.quickfixhistory ,{})
 
 
 local actions = require "telescope.actions"
@@ -13,6 +17,7 @@ require("telescope").setup {
         mappings = {
             i = {
                 ["<c-e>"] = actions.file_vsplit,
+                ["<c-h>"] = actions.file_split,
             }
         }
     },
@@ -26,3 +31,4 @@ require("telescope").setup {
         }
     }
 }
+
