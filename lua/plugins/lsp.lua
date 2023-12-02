@@ -47,9 +47,9 @@ return{
                 },
                 -- formatting = lsp_zero.cmp_format(),
                 snippet = {
-                    -- expand = function(args)
-                    --     require("luasnip").lsp_expand(args.body)
-                    -- end,
+                    expand = function(args)
+                        require("luasnip").lsp_expand(args.body)
+                    end,
                 },
                 formatting = {
                     fields = {'abbr', 'kind', 'menu'},

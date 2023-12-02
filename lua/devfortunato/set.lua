@@ -1,3 +1,4 @@
+local opt = vim.opt
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
@@ -26,6 +27,14 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
-vim.opt.updatetime = 50
+vim.opt.updatetime = 1000
 
 vim.opt.colorcolumn = "80"
+opt.wildignore = "__pycache__"
+opt.wildignore:append { "*.o", "*~", "*.pyc", "*pycache*" }
+opt.wildignore:append { "Cargo.lock", "Cargo.Bazel.lock" }
+opt.cursorline = true -- Highlight the current line
+
+opt.splitright = true -- Prefer windows splitting to the right
+opt.splitbelow = true -- Prefer windows splitting to the bottom
+
