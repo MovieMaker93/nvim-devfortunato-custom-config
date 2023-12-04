@@ -25,10 +25,3 @@ vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
 -- this will expand the current item or jump to the next item within the snippet.
 --
 local ls = require "luasnip"
-vim.keymap.set("i", "<c-l>", function()
-  if ls.choice_active() then
-    ls.change_choice(1)
-  end
-end)
-
-vim.keymap.set("i", "<c-u>", require "luasnip.extras.select_choice")
