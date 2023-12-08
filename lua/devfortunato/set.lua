@@ -39,3 +39,11 @@ opt.cursorline = true -- Highlight the current line
 opt.splitright = true -- Prefer windows splitting to the right
 opt.splitbelow = true -- Prefer windows splitting to the bottom
 
+-- Sync clipboard between the OS and Neovim.
+vim.opt.clipboard = 'unnamedplus'
+
+-- Save undo history.
+vim.opt.undofile = true
+-- Show whitespace.
+vim.opt.list = true
+vim.opt.listchars = { space = '⋅', trail = '⋅', tab = '  ↦' }
