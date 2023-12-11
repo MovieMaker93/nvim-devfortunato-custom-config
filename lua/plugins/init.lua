@@ -45,6 +45,26 @@ return{
       "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
       "MunifTanjim/nui.nvim",
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-    }
+    },
+        {
+            "lukas-reineke/indent-blankline.nvim",
+            config = function()
+                local blankline = require("ibl")
+                blankline.setup({
+                    scope = {
+                        show_start = false,
+                    },
+                    indent = {
+                        char = "┊",
+                        tab_char = "┊",
+                        smart_indent_cap = true,
+                    },
+                    whitespace = {
+                        remove_blankline_trail = true,
+                    },
+                })
+            end,
+        },
+
 }
 }
