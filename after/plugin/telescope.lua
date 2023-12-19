@@ -8,7 +8,9 @@ vim.keymap.set('n', '<leader>pb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>fb', builtin.current_buffer_fuzzy_find, {})
-vim.keymap.set('n', '<leader>qx', builtin.quickfixhistory ,{})
+vim.keymap.set('n', '<leader>qx', builtin.quickfix ,{})
+vim.keymap.set('n', '<leader>gh', builtin.help_tags ,{})
+vim.keymap.set('n', '<leader>vc', builtin.commands ,{})
 
 
 local actions = require "telescope.actions"

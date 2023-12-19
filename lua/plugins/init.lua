@@ -14,6 +14,9 @@ return{
         lazy = false,
     },
     {
+    "xiyaowong/transparent.nvim"
+    },
+    {
         "folke/zen-mode.nvim",
         cmd = "ZenMode",
         opts = {
