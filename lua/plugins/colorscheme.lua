@@ -17,6 +17,8 @@ return{
                 lsp_trouble = true,
                 mason = true,
                 mini = true,
+                dap_ui = true,
+                dap = true,
                 native_lsp = {
                     enabled = true,
                     underlines = {

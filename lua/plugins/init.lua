@@ -2,6 +2,7 @@ return{
     {
         'nvim-telescope/telescope.nvim',
         dependencies = { 'nvim-lua/plenary.nvim' },
+        dir = "/home/moviemaker/opensources/telescope.nvim",
         keys = {
             {'<leader>pf', "<cmd>Telescope find_files<cr>", desc = "Find file"},
         },
@@ -13,9 +14,9 @@ return{
         },
         lazy = false,
     },
-    {
-    "xiyaowong/transparent.nvim"
-    },
+    -- {
+    -- "xiyaowong/transparent.nvim"
+    -- },
     {
         "folke/zen-mode.nvim",
         cmd = "ZenMode",
