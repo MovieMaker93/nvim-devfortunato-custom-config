@@ -32,6 +32,9 @@ return{
     {
         "laytan/cloak.nvim"
     },
+    {
+        "nvim-tree/nvim-web-devicons",
+    },
     -- {
     --     "folke/trouble.nvim",
     --     dependencies = { "nvim-tree/nvim-web-devicons" },
